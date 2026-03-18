@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://weberi.github.io/chatroom/dist/Chatroom.css" />
+  </head>
+  <body>
+    <div class="chat-container"></div>
+    <script src="https://weberi.github.io/chatroom/dist/Chatroom.js"></script>
+    <script type="text/javascript">
+      var chatroom = new window.Chatroom({
+        host: "https://sturdy-space-computing-machine-g49jr4v47p672w46g-5005.app.github.dev",
+        title: "Chat mit Moodbot",
+        container: document.querySelector(".chat-container"),
+        welcomeMessage: "Hallo! Ich bin der Moodbot!",
+      });
+      chatroom.openChat();
+    </script>
+  </body>
+</html>
