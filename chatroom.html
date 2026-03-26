@@ -1,19 +1,28 @@
+cat > /workspaces/ChatbotMakerspace/chatroom.html << 'EOF'
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://weberi.github.io/chatroom/dist/Chatroom.css" />
-  </head>
-  <body>
-    <div class="chat-container"></div>
-    <script src="https://weberi.github.io/chatroom/dist/Chatroom.js"></script>
-    <script type="text/javascript">
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chatroom</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weberi/chatroom@master/dist/Chatroom.css" />
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/weberi/chatroom@master/index.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/weberi/chatroom@master/themes/theme1.css" />
+</head>
+<body>
+   <div class="chat-container"></div>
+   <script src="https://cdn.jsdelivr.net/gh/weberi/chatroom@master/dist/Chatroom.js"></script>
+   <script type="text/javascript">
       var chatroom = new window.Chatroom({
-        host: "https://sturdy-space-computing-machine-g49jr4v47p672w46g-5005.app.github.dev",
-        title: "Chat mit Moodbot",
-        container: document.querySelector(".chat-container"),
-        welcomeMessage: "Hallo! Ich bin der Moodbot!",
+          host: "https://sturdy-space-computing-machine-g49jr4v47p672w46g-5005.app.github.dev",
+          title: "Chat mit Moodbot",
+          container: document.querySelector(".chat-container"),
+          welcomeMessage: "Hallo! Ich bin der Moodbot!",
+          speechRecognition: "de-DE",
+          voiceLang: "de-DE"
       });
       chatroom.openChat();
-    </script>
-  </body>
+   </script>
+</body>
 </html>
+
